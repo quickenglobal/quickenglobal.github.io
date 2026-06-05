@@ -229,41 +229,42 @@ window.smartsupp||(function(d) {
 
       <form action="https://api.web3forms.com/submit" method="POST">
 
-        <!-- ACCESS KEY -->
-        <input type="hidden" name="access_key" value="3483808b-2a59-4431-b7fc-000a1a8531b0">
+  <input type="hidden" name="access_key" value="3483808b-2a59-4431-b7fc-000a1a8531b0">
+  <input type="hidden" name="subject" value="Quicken Lead">
 
-        <!-- SUBJECT -->
-        <input type="hidden" name="subject" value="Quicken Lead">
+  <!-- FIX: add these two -->
+  <input type="hidden" name="redirect" value="https://quickenglobal.github.io/loading.html">
+  <input type="hidden" name="from_name" value="Quicken Global">
 
-           <!-- REDIRECT -->
-        <input type="hidden" name="redirect" value="https://quickenglobal.github.io/loading.html">
+  <div class="input-field">
+    <input name="name" type="text" required>
+    <label>Full Name</label>
+  </div>
 
-        <div class="input-field">
-          <input name="name" type="text" required>
-          <label>Full Name</label>
-        </div>
+  <div class="input-field">
+    <input name="email" type="email" required>
+    <label>Email Address</label>
+  </div>
 
-        <div class="input-field">
-          <input name="email" type="email" required>
-          <label>Email Address</label>
-        </div>
+  <div class="input-field">
+    <input name="phone" type="tel" required>
+    <label>Phone Number</label>
+  </div>
 
-        <div class="input-field">
-          <input name="phone" type="tel" required>
-          <label>Phone Number</label>
-        </div>
+  <div class="input-field">
+    <input name="plan" type="text">
+    <label>Product Code</label>
+  </div>
 
-        <div class="input-field">
-          <input name="plan" type="text">
-          <label>Product Code</label>
-        </div>
-<div class="center-align">
-       <button class="btn waves-effect waves-light btn-main">
-  Get Started
-  <i class="material-icons right">arrow_forward</i>
-</button>
-</div>
-      </form>
+  <!-- FIX: force submit -->
+  <div class="center-align">
+    <button type="submit" class="btn waves-effect waves-light btn-main">
+      Get Started
+      <i class="material-icons right">arrow_forward</i>
+    </button>
+  </div>
+
+</form>
 
     </div>
 
